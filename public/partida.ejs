@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CREAR PARTIDA</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/style_menu.css">
+	<link href="css/botones.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="cabecera">
+			<h2>PARTIDA CREADA CON EXITO</h2>
+			<h3>PIN: <%= PIN %> </h3>
+		    <h3>FRASE: </h3>
+			<p> <%= FRASE %></p>
+			<form action="/read" method="post">
+				<div class="boton-menu">
+					<input class="frase-ingreso" type="text" id="pin" name="pin" value=<%=PIN %> hidden >
+				</div>
+				<div class="boton-menu">
+					<input class="frase-ingreso" type="text" id="alias" name="alias" value="admin" hidden>
+				</div>
+				<input class="boton" type="submit" id="btnBuscarPartida" value="Confirmar ">
+			</form>
+		</div>
+		<a href="/">
+			<input class="boton" type="button" value="Volver">
+		</a>
+	</div>
+</body>
+
