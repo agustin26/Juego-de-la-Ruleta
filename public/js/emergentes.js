@@ -21,8 +21,8 @@ function cerrarMenuJug() {
 /*ruleta*/
 function abrirRuleta() {
   document.getElementById("canvas").style.visibility="visible";
-  /*document.getElementById("solapaDivRuleta").style.visibility = "visible";
-  document.getElementById("cerrarRuleta").style.visibility = "visible";*/
+  /*document.getElementById("solapaDivRuleta").style.visibility = "visible";*/
+  document.getElementById("cerrarRuleta").style.visibility = "visible";
 
 }
 
